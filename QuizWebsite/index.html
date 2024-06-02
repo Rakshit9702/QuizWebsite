@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="main-title">Quiz Website</h1>
+        <nav>
+            <ul class="navbar">
+                <li class="dropdown">
+                    <button class="dropbtn">Quizzes</button>
+                    <div class="dropdown-content">
+                        <input type="text" id="searchInput" placeholder="Search Quiz...">
+                        <a href="#" data-quiz="maths">Maths</a>
+                        <a href="#" data-quiz="english">English</a>
+                        <a href="#" data-quiz="computer">Computer</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="quizContent">
+            <div id="quiz-timer">10</div>
+            <div id="quiz-score">Score: 0</div>
+        </div>
+        <div id="calculator">
+            <input type="text" id="calcDisplay" disabled>
+            <div id="calcButtons">
+                <button class="calc-btn" data-value="7">7</button>
+                <button class="calc-btn" data-value="8">8</button>
+                <button class="calc-btn" data-value="9">9</button>
+                <button class="calc-btn" data-value="/">/</button>
+                <button class="calc-btn" data-value="4">4</button>
+                <button class="calc-btn" data-value="5">5</button>
+                <button class="calc-btn" data-value="6">6</button>
+                <button class="calc-btn" data-value="*">*</button>
+                <button class="calc-btn" data-value="1">1</button>
+                <button class="calc-btn" data-value="2">2</button>
+                <button class="calc-btn" data-value="3">3</button>
+                <button class="calc-btn" data-value="-">-</button>
+                <button class="calc-btn" data-value="0">0</button>
+                <button class="calc-btn" data-value=".">.</button>
+                <button class="calc-btn" data-value="C">C</button>
+                <button class="calc-btn" data-value="+">+</button>
+                <button class="calc-btn" data-value="=">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
